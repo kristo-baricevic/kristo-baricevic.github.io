@@ -1,0 +1,234 @@
+body {
+    margin: 8px;
+    background-color: rgb(252, 255, 240);
+    display: block;
+}
+
+.main {
+    margin-top: 70px;
+}
+
+article {
+    font-size: 20px;
+    padding: 30px 30px 30px 40px
+}
+
+p {
+    font-size: 27px;
+    padding: 20px;
+}
+
+.funParagraph {
+    color: black;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #3ddc3d
+}
+
+h2 {
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #058f05;
+}
+
+h3  {
+    background-color: lightgreen;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.navbar {
+    background-color:black;
+    height:40px;
+    z-index:999;
+    margin:0 auto;
+    border-bottom:10px solid red;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+}
+
+
+.navbar a {
+    float: left;
+    font-size: 20px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: greenyellow;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.stripe1  {
+    background-color: rgb(181, 246, 158);
+    border: 3px solid #73AD21;
+    padding: 10px;
+    float: left;  
+}
+
+.stripe1 img {
+    padding: 20px;
+    float: left;
+    height: 350px;
+    width: 350px
+}
+
+.stripe2 img {
+    padding: 20px;
+    float: right;
+    height: 350px;
+    width: 350px
+}
+
+.stripe2  {
+    background-color: rgb(247, 182, 215);
+    border: 3px solid #73AD21;
+    padding: 10px;
+    float: right;    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.column {
+    flex: 50%;
+    padding: 0 0px;
+}
+  
+.column img {
+    margin-top: 40px;
+    vertical-align: middle;
+    width: 35%;
+}
+
+.visualArt {
+    background-color: rosybrown;
+    text-align: center;
+}
+
+.novelDesign {
+    background-color: burlywood;
+    text-align: center;
+}
+
+.comicStyle {
+    background-color: peachpuff;
+    text-align:center;
+}
+
+.copywriting {
+    background-color: palegoldenrod;
+    text-align: center;
+}
+
+#bandcamp {
+    margin-left: 50px;
+}
+
+#cassette {
+    height: 400px;
+    width: 250px
+}
+
+#commercialDesign {
+    padding: 30px 30px 30px 30px
+}
+
+#comicBook img {
+    padding: 15px
+}
+
+#copywriting img {
+    padding: 20 px
+}
+
+#concertPosters {
+    background-color: palevioletred;
+    margin: 0;
+    padding: 30p 30px 30px 30px;
+}
+
+#concertPosters {
+    padding: 30px 30px 30px 30px
+}
+
+#drawings {
+    background-color: lightpink;
+}
+
+#drawings img {
+    padding: 30px 40px 30px 40px
+}
+
+#house  {
+    background-color:lightseagreen;
+    text-align: center
+}
