@@ -1,419 +1,228 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Happiness Is a Warm Website [load load, reload]</title>
-      <link rel="stylesheet" type="text/css" href="styles.css" />
-   </head>
-   <body> 
-      <div class="navbar sticky" >
-         <div class="dropdown">
-            <button class="dropbtn">MUSIC</button>       
-               <div class="dropdown-content">
-                  <a href="#discographyPerformance">PERFORMANCE DISCOGRAPHY</a>
-                  <a href="#discoProduction">PRODUCTION DISCOGRAPHY</a>
-               </div>
+<head>
+   <title>W3.CSS Template</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+</head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+   <!-- Avatar image in top left corner -->
+   <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+   <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+   </a>
+   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+   </a>
+   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-eye w3-xxlarge"></i>
+      <p>PHOTOS</p>
+   </a>
+   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+   </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+      <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+      <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+      <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+   </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+   <!-- Header/Home -->
+   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+      <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Kristo.</h1>
+      <p>Web & Software Developer.</p>
+      <img src="images/IMG_4301.jpg" alt="boy" class="w3-image" width="992" height="1108">
+   </header>
+
+   <!-- About Section -->
+   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+      <h2 class="w3-text-light-grey">My Name</h2>
+      <hr style="width:200px" class="w3-opacity">
+      <p> I grew up with the internet and built my first website when I was just 10 years old.
+         I honed my instincts for design while working on album art and concert posters in the music industry.
+         I love to build web-based apps and work mostly in Java and JavaScript,
+         but I love learning new languages and databases!
+         There is nothing I won't do, and nothing I won't learn, to get the job done.
+      </p>
+      <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+      <p class="w3-wide">Web & App Development</p>
+      <div class="w3-white">
+         <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-white">
+         <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+      </div>
+      <p class="w3-wide">Photoshop</p>
+      <div class="w3-white">
+         <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+      </div><br>
+
+      <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">11+</span><br>
+            Partners
          </div>
-         <div class="dropdown">
-            <button class="dropbtn">WRITING</button>
-               <div class="dropdown-content">
-                  <a href="#comicBook">COMIC</a>
-                  <a href="#harvest2045">NOVEL</a>
-                  <a href="#copywriting">BUSINESS WRITING</a>
-               </div>
-            </div>
-         <div class="dropdown">
-            <button class="dropbtn">VISUAL ART</button>
-               <div class="dropdown-content">
-                  <a href="#concertPosters">EVENT POSTERS</a>
-                  <a href="#commercialDesign">COMMERCIAL DESIGN</a>
-                  <a href="#drawings">DRAWINGS</a>
-                  <a href="#paintingsCanvas">PAINTINGS</a>
-               </div>
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span><br>
+            Projects Done
          </div>
-         <div class="dropdown">
-            <button class="dropbtn">RESIDENTIAL REHAB</button>
-               <div class="dropdown-content">
-                  <a href="#keokukHouse">KEOKUK HOUSE</a>
-                  <a href="#keokukKitchen">ATTIC CONVERSION</a>
-                  <a href="#keokukBasement">BASEMENT</a>
-               </div>   
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span><br>
+            Happy Clients
          </div>
-      </div> 
-      <main></main>
-         <div class="main">
-            <header>
-               <h1>Kristo's Creative Resume</h1>
-            </header>
-         <div id="discographyPerformance">
-            <h1>Selected Discography</h1>
-               <h2>Performance Discography</h2>
-            <div class="stripe1">
-               <img src="images/ripinfinity.jpeg">
-               <p>The Strange Places were my most recent and my favorite band. I wrote all 
-               of the songs, sang lead vocals and played lead guitar. This band existed
-               from 2015-2017 and went on several Midwest tours. RIP Infinity is my 
-               contribution to the psychedilic soundscape of American music. I also did
-               the graphic design.
-               <br>
-               <br>
-               <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3359540597/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                  <a href="https://thestrangeplaces.bandcamp.com/album/rip-infinity">RIP Infinity by The Strange Places</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe2">
-               <img src="images/kristo_happycamp.jpeg">
-               <p>Many of the songs in RIP Infinity started off here, in HAppY CaMP, a lo-fi
-               bedroom collection of songs I wrote while living, breathing, and traveling
-               around Earth in my twenties. A lof of these songs have to do with death,
-               loss, and subsequent resurrection. I played all instruments and made the 
-               artwork.
-               <br>
-               <br>
-               <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1370983822/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                  <a href="https://kristostl.bandcamp.com/album/happy-camp">Happy Camp by Kristo</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe1">
-               <img src="images/LC_blackberry.jpeg">
-               <p>On occasion I get to travel around playing piano for musicians like Patrick
-               Haggerty, the first gay singer in Country Music. Patrick Released the self-titled
-               Lavender Country album in 1973, a pro-Queer masterpiece that lived in
-               obscurity until it's re-release in 2014. Since then, Patrick has enjoyed
-               a resurgance and I was recruited, among many others, to bring the Lavender
-               Country music to a modern setting. 
-               <br>
-               <br>
-               <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3501515354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                  <a href="https://lavendercountry.bandcamp.com/album/blackberry-rose">Blackberry Rose by Lavender Country</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe2">
-               <img src="images/OSB_missouri.jpeg">
-               <p>Old Scratch's Burnpile is a collaboration with my friend Nicky Z. It's 
-                  kind of like the Muppets gone country, but it's a little twisted and irreverent. We like
-                  to explore the fringes of country music and desecrate the mountain of legends
-                  that brought us here. But not in a bad way!
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2562654200/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://oldscratchsburnpile.bandcamp.com/album/missouri-leather">Missouri Leather by Old Scratch&#39;s Burnpile</a></iframe>
-                  </p>
-               </img>
-            </div>
-            <div class="stripe1">
-               <img src="images/OSB_smoldering.jpeg">
-               <p>This is a psyche-dil-ic (that's a pickle joke) country adventure, featuring the Opus of Bacon Fat the River Rat
-                  in two parts, which I believe to be a key missing piece of the answer to oft-asked 
-                  question, "Where did Trap Country come from?" This collection also features the A.L.L.S.A.U.C.E. 
-                  Theme and unlicensed usage of Richard Nixon's voice.
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2639785315/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://oldscratchsburnpile.bandcamp.com/album/smoldering-thoughts-of-timelessness">Smoldering Thoughts of Timelessness by Old Scratch&#39;s Burnpile</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe2">
-               <img id="cassette" src="images/paisley_estrange.jpeg">
-                  <p>These were the b-sides to HAppY CaMP, but I didn't want to perform them so I made
-                  up an alter ego, Paisley Estrange, who was a lounge singer in a ghost town. I played 
-                  all of the instruments except for a few drum tracks which feature one of my favorite drummers!
-                  I also did the graphic design, which is an outfit purchased en route to a concert by the Rebel,
-                  laid out upon a blanket I rescued from the thrift bins. I believe this is be what Paisley Estrange
-                  wore while he worked his empty lounges.
-               <br>
-               <br>
-               <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=705588071/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                  <a href="https://kristostl.bandcamp.com/album/ghost-town-lounge">Ghost Town Lounge by Kristo</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe1">
-               <img src="images/ME_moneyLies.jpeg">
-               <p>Maximum Effort is my favorite punk rock band. They write songs about alien coverups
-                  and government conspiracies. The guitars scorch and the lyrics pull no punches. I have
-                  been fortunate to play keyboard on a couple of their albums! This one came out on my 
-                  record label and is a fun collection of songs.
-               <br>
-               <br>
-               <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=34872359/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                  <a href="https://maximumeffort.bandcamp.com/album/money-lies-and-media-reels">Money, Lies and Media Reels by Maximum Effort</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe2">
-                  <img src="images/MAXEF_ST.jpeg">
-                  <p>Another fun group of songs that these guys let me put some keyboards on. The topics
-                     of the song got a little more into technology so we got to play with some fun new 
-                     sounds on this one. I think the band sounds amazing on this record!
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2013939894/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://maximumeffort.bandcamp.com/album/maximum-effort">Maximum Effort by Maximum Effort</a></iframe>
-                  </p>
-                  </img>
-            </div>
-         </div>      
-            <h2>Production Discography</h2>
-         <div id="discoProduction"></div>
-            <div class="stripe1">
-               <img src="images/joMorris_ghostQueen.jpeg">
-               <p>Jo Morris is a singer-songwriter who lives in New Orleans. She has one of the coolest
-                  singing voices I have heard, and I was honored when she asked me to produce an EP for
-                  her. We worked up some demos and arrangements with my band at the time, the Strange 
-                  Places, and came up with this really cool collection of songs. I consider this to be a 
-                  companion piece to the Strange Places full length album, RIP Infinity,
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2595465873/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://jomorris.bandcamp.com/album/ghost-queen">Ghost Queen by Jo Morris</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div class="stripe2">
-               <img src="images/alleyghost_bornthere.jpeg">
-               <p>Bob Reuter is a legendary singer-songwriter from St. Louis' music scene. He 
-                  started making music in the 60s and didn't stop until his death in 2013. This
-                  ablum is his most cohesive and his strongest full-length rock album and I 
-                  loved putting this band together and running the sessions. This album has some 
-                  killer guitar from Mat Wilson! I play piano, organ, and guitar as well.
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=505532480/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://alleyghost.bandcamp.com/album/born-there">Born There by Bob Reuter&#39;s Alley Ghost</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div id="danaDew" class="stripe1">
-               <img src="images/alleyghost_danadew.jpeg">
-               <p>This is a 45 rpm single featuring two songs from a later line-up of Alley Ghost. We 
-                  recorded this with Carl Nappa at Nelly's studio in downtown St. Louis. What a trip! 
-                  I played guitar and did a lot of pre-production work with this one. It's one of my
-                  favorites because my younger brother plays guitar on this one too!
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=994425196/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://alleyghost.bandcamp.com/album/dana-dew">Dana Dew by Bob Reuter&#39;s Alley Ghost</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div id="youBelong" class="stripe2">
-               <img src="images/alleyghost_youbelong2me.jpeg">
-               <p>After Bob passed away, I got all the different members that had come and gone through
-                  Alley Ghost together and we went ahead and made the album Bob intended to make. This 
-                  album has some really special songs on it, including some that Bob never got around to 
-                  recording. The band members share singing duties. I produced and played guitar and piano.
-                  <br>
-                  <br>
-                  <iframe id="bandcamp" style="border: 0; width: 350px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=3341353022/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless>
-                     <a href="https://alleyghost.bandcamp.com/album/you-belong-to-me">You Belong To Me by Bob Reuter&#39;s Alley Ghost</a></iframe>
-               </p>
-               </img>
-            </div>
-            <div id="hootenHallers" class="stripe1">
-               <img src="images/hootenHallers_ST.jpeg">
-               <p>The Hooten Hallers are a great road-hardened blues rock band with a really cool 
-                  element - a killer saxophone player! This band is a lot of fun to produce and we 
-                  got to make this album in an old Masonic Temple in Cincinatti, OH with Johnny Walker
-                  from the Soledad Brothers.
-                  <br>
-                  <br>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7lcfD2MxioLHfNwG8WgotS?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-               </p>
-               </img>
-            </div>
-            <div id="tortuga" class="stripe2">
-               <img src="images/tortuga_songs.jpg">
-               <p>
-                  Tortuga is a supergroup of sorts that features the songs of Mike Leahy. I think at one 
-                  point we might have had 9 or 10 people on stage for live performances of this band,
-                  but in the studio we were really able to hone in on the atmospheric elements created by
-                  pedal steel and other auxilary instruments. It gives off an alternative spaghetti western 
-                  vibe.
-                  <br>
-                  <br>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5FrHCNKmK3PS4yTooBFkb6?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-               </p>
-               </img>
-            </div>
-            <div id="ryank" class="stripe1">
-               <img src="images/ryank_2diffworlds.jpeg">
-               <p>Ryan Koenig is one of the great musicians from St. Louis and this is his first, but certainly
-                  not the last, contribution to the country music history books. It features some of the 
-                  hottest players in St. Louis and Ryan is certainly one of the best songwriters
-                  I have had the pleasure to know.
-                  <br>
-                  <br>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/73xDyNKxtNhpUvNIMC4S4i?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-               </p>
-               </img>
-            </div>
-            <div id="jenny" class="stripe2">
-               <img src="images/jenny_burninMoonlight.jpg">
-               <p>
-                  Jenny is a killer singer and a great songwriter. I had a lot of fun producing and 
-                  arranging these songs, as many of them were brought to me at the demo stage. I love
-                  to fill songs out and think of different musicians that can really give the words life 
-                  and meaning. This project is a great example of that!
-                  <br>
-                  <br>
-                  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3baVkAtGumigG8dCjkbDaa?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-               </p>
-               </img>
-            </div>
+         <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br>
+            Meetings
          </div>
       </div>
-         <div class="comicStyle">
-            <h2>COMIC</h2>
-               <div id="comicBook">
-                  <h3><a href="https://www.dropbox.com/s/l2f3ppx6t4xukfb/comic.pdf?dl=0">THE BUM TRIP</a></h3>
-                  <p>
-                     <i>The Bum Trip</i> is a travelogue comic book that tells the tale of a curious fugitive 
-                     who travels by thumb and communes with spirits they do not fully understand. Although highly
-                     fictional this was inspired by my own hitchhiking adventures in my early twenties. 
-                  </p>
-                  <img src="comic/comic1.jpg" width="396" height="306" />
-                  <img src="comic/comic2.jpg" width="396" height="306"/>
-                  <img src="comic/comic3.jpg" width="396" height="306"/>
-                  <img src="comic/comic4.jpg" width="396" height="306"/>
-               </div>
-            <div class="novelDesign">
-               <h2>HARVEST 2045 (a novel attempt)</h2>
-                  <div id="harvest2045">
-                     <p class="funParagraph" id="testP">Click the link below and you will be directed to a science fiction novel I wrote!
-                        Although in dire need of editing, this book tells the story of a young man whose
-                        accidental introduction to extra-sensory perception leads him to a race to save the world.
-                     </p>
-                     <h3>xxxxxxxxxxxx<a href="https://www.dropbox.com/s/n8cfza26ers6zkr/Harvest2045.pdf?dl=0">DOWNLOADAOLNWOD</a>xxxxxxxxxxxx</h3>         
-                        <img src="book/Harvest2045.jpg" height="749" width="542" />
-                  </div>
-            </div>
-               <div class="copyArt">
-                  <h2>Business Writing</h2>
-                     <div id="copywriting">
-                        <article>While working in music production and management, I often found myself writing copy for an artist's press kit.
-                           Artist bios, album one-sheets, and other types of copy became a regular task. I also developed an extensive business
-                           plan in order to raise capital, which is sampled here.
-                        </article>
-                        <img src="images/BigMuddyBusinessPlanEXCERPT3.jpg" height ="425" width ="550" /><br>
-                        <img src="images/DINOS1sheet.DRAFT.jpg" height ="630" width ="480" />
-                        <img src="images/Ryan1sheet.jpg" height ="630" width ="480" />
-                     </div>
-               </div>
+
+      <button class="w3-button w3-light-grey w3-padding-large w3-section">
+         <i class="fa fa-download"></i> Download Resume
+      </button>
+
+      <!-- Grid for pricing tables -->
+      <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+      <div class="w3-row-padding" style="margin:0 -16px">
+         <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+               <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+               <li class="w3-padding-16">Web Design</li>
+               <li class="w3-padding-16">Photography</li>
+               <li class="w3-padding-16">5GB Storage</li>
+               <li class="w3-padding-16">Mail Support</li>
+               <li class="w3-padding-16">
+                  <h2>$ 10</h2>
+                  <span class="w3-opacity">per month</span>
+               </li>
+               <li class="w3-light-grey w3-padding-24">
+                  <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+               </li>
+            </ul>
          </div>
-      <div>
-         <div  class="visualArt">
-            <h2>Concert Posters</h2>
-             <div id="concertPosters">
-               <p>One of my favorite parts of being in bands and organizing events was making the posters! This is 
-                  but a small sampling the dozens and dozens of posters I must have made over the years.
-               </p>
-                  <img src="images/AGRelease.jpg" height="510" width="330" />
-                  <img src="images/BlueBerry.jpg" height="510" width="330" />
-                  <img src="images/BMR10BDAY.jpg" height="510" width="330" />
-                  <img src="images/chilicookoff.jpg" height="510" width="330" />
-                  <img src="images/fishfry.jpg" height="510" width="330" />
-                  <img src="images/leo.jpg" height="510" width="330" />
-                  <img src="images/Teardrops.jpg" height="510" width="330" />
-                  <img src="images/RDRPoster.jpg" height="510" width="330" />
-               </div>
-            <h2>Commercial Design</h2>
-               <div id="commercialDesign">
-                  <p>
-                     For a short period of time I was employed in a coworking space and was able to work with a new 
-                     medium - commercial office space! One of my favorite projects were bringing blues themed
-                     conference rooms to life with the use of these fun window frosting designs. 
-                  </p>
-                  <img src="commercialDesign/IMG_0982.JPG" width="400" height="300"/>
-                  <img src="commercialDesign/IMG_0987.JPG" width="400" height="300"/>
-                  <img src="commercialDesign/IMG_0991.JPG" width="400" height="300"/>
-                  <img src="commercialDesign/IMG_0992.JPG" width="400" height="300"/>
-                  <img src="commercialDesign/IMG_2083.JPG" width="400" height="300"/>
-               </div>
-            <h2>Marker Drawings</h2>
-               <div id="drawings">
-                  <p>
-                     I also dabble in art for art's sake! These are some drawings and paintings that I had a lot
-                     of fun making. There's themes and stories, but they speak for themselves!
-                  </p>
-                  <div class="row"></div>
-                     <div class="column">
-                     <img src="drawings/IMG_9944.jpg" />
-                     <img src="drawings/IMG_9942.jpg" />
-                     <img src="drawings/IMG_9941.jpg" />
-                     <img src="drawings/IMG_9940.jpg" />
-                     <img src="drawings/IMG_9939.jpg" />
-                     <img src="drawings/IMG_9938.jpg" />
-                     <img src="drawings/IMG_9937.jpg" />
-                     <img src="drawings/IMG_9936.jpg" />
-                     </div>
-                     <div class="column">
-                     <img src="drawings/IMG_9935.jpg" />
-                     <img src="drawings/IMG_9933.jpg" />
-                     <img src="drawings/IMG_9932.jpg" />
-                     <img src="drawings/IMG_9929.jpg" />
-                     <img src="drawings/IMG_9928.jpg" />
-                     <img src="drawings/IMG_9927.jpg" />
-                     <img src="drawings/IMG_9934.jpg" />
-                     <img src="drawings/IMG_9926.jpg" />
-                     </div>
-                  </div>
-                  <h2>Multi-Media on Canvas</h2>
-                     <div id="paintingsCanvas">
-                        <div>
-                           <img src="images/painting1.jpeg" height="415" width="480" />
-                        </div>
-                        <div>
-                           <img src="images/painting2.jpeg" height="245" width="480" />
-                        </div>
-                        <div>
-                           <img src="images/painting3.jpeg" height="373" width="480"/>
-                        </div>
-                        <div >
-                           <img src="images/painting4.jpeg" height="362" width="480" />
-                        </div>
-                     </div>
+
+         <div class="w3-half">
+            <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+               <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+               <li class="w3-padding-16">DreamZ - A Dream Journaling App</li>
+               <li class="w3-padding-16">Bob Reuter Photography Archive</li>
+               <li class="w3-padding-16">Music and Music Production</li>
+               <li class="w3-padding-16">Graphic Design</li>
+               <li class="w3-padding-16">
+                  <h2>$ 25</h2>
+                  <span class="w3-opacity">per month</span>
+               </li>
+               <li class="w3-light-grey w3-padding-24">
+                  <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+               </li>
+            </ul>
          </div>
+         <!-- End Grid/Pricing tables -->
       </div>
-      <div id="house">
-         <h2>THE KEOKUK HOUSE</h2>
-            <p>
-               I spent about two years gutting and rehabbing this house in St. Louis, MO.
-            </p>
-            <div id="keokukHouse">
-               <img src="images/house2.jpeg" height="300" width="400" />
-               <img src="images/house11.jpg" height="300" width="400" />
-               <img src="images/house3.jpeg" height="300" width="400" />
-               <img src="images/house4.jpeg" height="400" width="300" />
-               <img src="images/house12.jpg" height="300" width="400" />
-               <img src="images/house13.jpg" height="300" width="400" />
-            </div>
-         <h3>Attic Conversion and Kitchen Expansion</h3>
-         
-            <div id="keokukKitchen">
-               <img src="images/house5.jpeg" height="400" width="300" />
-               <img src="images/house6.jpeg" height="300" width="400" />
-               <img src="images/house7.jpeg" height="300" width="400" />
-               <img src="images/house8.jpeg" height="300" width="400" />
-               <img src="images/house14.jpg" height="300" width="400" />
-               <img src="images/house9.jpeg" height="300" width="400" />
-            </div>
-         <h3>Basment</h3>
-         <p> The basement 
-            and foundation needed a lot of work and I used a lot of ememrging foundation repair 
-            technologies. The paint job was a lot of fun! And most importantly, the basement stayed dry. 
+
+      <!-- Testimonials -->
+      <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+      <img src="/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Chris Fox.</span> President at People Community Leaders Community.</p>
+      <p>Kristo saved us from a rift in the space time continuum.</p><br>
+
+      <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+      <p><span class="w3-large w3-margin-right">Robert Flex.</span> CEO at Very Big Company.</p>
+      <p>No one is better than Kristo. Just wow.</p>
+      <!-- End About Section -->
+   </div>
+
+   <!-- Portfolio Section -->
+   <div class="w3-padding-64 w3-content" id="photos">
+      <h2 class="w3-text-light-grey">My Photos</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+         <div class="w3-half">
+            <img src="/w3images/wedding.jpg" style="width:100%">
+            <img src="/w3images/rocks.jpg" style="width:100%">
+            <img src="/w3images/sailboat.jpg" style="width:100%">
+         </div>
+
+         <div class="w3-half">
+            <img src="/w3images/underwater.jpg" style="width:100%">
+            <img src="/w3images/chef.jpg" style="width:100%">
+            <img src="/w3images/wedding.jpg" style="width:100%">
+            <img src="/w3images/p6.jpg" style="width:100%">
+         </div>
+         <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+   </div>
+
+   <!-- Contact Section -->
+   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+      <h2 class="w3-text-light-grey">Contact Me</h2>
+      <hr style="width:200px" class="w3-opacity">
+
+      <div class="w3-section">
+         <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Philadelphia, PA</p>
+         <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 314-338-0139</p>
+         <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: kristo.baricevic@gmail.com </p>
+      </div><br>
+      <p>Let's get in touch. Send me a message:</p>
+
+      <form action="/action_page.php" target="_blank">
+         <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+         <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+         <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+         <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+         <p>
+            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+               <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
          </p>
-            <div id="keokukBasement">
-               <img src="images/house15.jpg" height="400" width="300" />
-               <img src="images/house16.jpg" height="400" width="300" />
-               <img src="images/house17.jpg" height="400" width="300" />
-               <img src="images/house18.jpg" height="400" width="300" />
-               <img src="images/house1.jpeg" height="300" width="400" />
-            </div>
-         </div>
-   </body>
-   <footer>This website made by Kristo with the help of espresso &copy; 2022</footer>
+      </form>
+      <!-- End Contact Section -->
+   </div>
+
+   <!-- Footer -->
+   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+      <!-- End footer -->
+   </footer>
+
+   <!-- END PAGE CONTENT -->
+</div>
+
+</body>
 </html>
