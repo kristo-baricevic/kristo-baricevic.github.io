@@ -565,6 +565,11 @@ a{
         width:99.99999%
     }
 }
+ @media (max-width: 767px) {
+   .project-grid {
+     grid-template-columns: 1fr;
+   }
+ }
  @media (min-width:993px){
     .w3-col.l1{
         width:8.33333%
