@@ -4,7 +4,7 @@
    <title>Kristo Baricevic Resume</title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <style>
@@ -52,7 +52,6 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </div>
 
 <!-- Page Content -->
-<div class="w3-padding-large" id="main">
    <!-- Header/Home -->
    <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
       <h1 class="w3-jumbo">Kristo Baricevic</h1>
@@ -127,45 +126,50 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       </center>
 
       </div>
-   </div>
 
    <!-- Portfolio Section -->
-   <div class="w3-padding-64 w3-content" id="photos">
+   <div class="projects-container">
       <h2 class="w3-text-light-grey">Projects</h2>
-      <hr style="width:200px" class="w3-opacity">
+      <center><hr style="width:500px;"></center>
 
       <!-- Grid for photos -->
-      <div style="margin: 20px 0px 0px 0px">
-      <div class="w3-row-padding" style="margin: 0 -16px">
-         <a href="https://journal-production-88d7.up.railway.app/login">
-         <div class="w3-half">
+      <div class="project-grid">
+         <div class ="project">
             <h3>Dream-Z - Dream Analysis App</h3>
-            <img src="images/DreamApp.png" style="width:100%; padding: 15px 5px 10px 20px;">
+            <a href="https://journal-production-88d7.up.railway.app/login">
+               <div class="w3-half">
+                  <img src="images/DreamApp.png">
+               </div>
+            </a>
          </div>
-         </a>
 
-         <a href="productpal-production.up.railway.app">
-            <div class="w3-half">
-               <h3>Product Pal - Inventory Management</h3>
-               <img src="images/product_pal.png" style="width:100%; padding: 15px 5px 10px 20px;">
-            </div>
-         </a>
+         <div class ="project">
+            <h3>Product Pal - Inventory Management</h3>
+            <a href="productpal-production.up.railway.app">
+               <div class="w3-half">
+                  <img src="images/product_pal.png">
+               </div>
+            </a>
+         </div>
 
-         <a href="https://bobreuterphotoarchive.vercel.app/">
-            <div class="w3-half">
-               <h3>Bob Reuter Photography Archive</h3>
-               <img src="images/BOB_Archive.png" style="width:100%; padding: 15px 5px 10px 20px;">
-            </div>
-         </a>
+         <div class ="project">
+            <h3>Bob Reuter Photography Archive</h3>
+            <a href="https://bobreuterphotoarchive.vercel.app/">
+               <div class="w3-half">
+                  <img src="images/BOB_Archive.png">
+               </div>
+            </a>
+         </div>
 
-         <a href="https://bigmuddyrecords.com/">
-            <div class="w3-half">
-               <h3>Big Muddy Records</h3>
-               <img src="images/BMR_Website.png" style="width:100%; padding: 15px 5px 10px 20px;">
-            </div>
-         </a>
+         <div class ="project">
+            <h3>Big Muddy Records</h3>
+            <a href="https://bigmuddyrecords.com/">
+               <div class="w3-half">
+                  <img src="images/BMR_Website.png">
+               </div>
+            </a>
+         </div>
          <!-- End photo grid -->
-      </div>
       </div>
       <!-- End Portfolio Section -->
    </div>
