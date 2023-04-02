@@ -28,8 +28,7 @@ summary{
     display:inline-block
 }
 .projects-container {
-  text-align: center;
-}
+ }
 
 .project-grid {
   display: grid;
@@ -569,6 +568,8 @@ a{
  @media (max-width: 767px) {
    .project-grid {
      grid-template-columns: 1fr;
+
+
    }
  }
  @media (min-width:993px){
