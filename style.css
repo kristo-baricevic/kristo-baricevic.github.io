@@ -533,12 +533,11 @@ a{
    .project-grid {
      grid-template-columns: 1fr;
    }
-   img {
-     float: right;
-     margin-left: 20px;
-     max-width: 50%;
-     height: auto;
-   }
+    img:not(.fixed-height) {
+        margin-left: 20px;
+        max-width: 50%;
+        height: auto;
+    }
  }
  @media (min-width:993px){
     .w3-col.l1{
@@ -1397,4 +1396,7 @@ a{
 }
 .w3-border-pale-blue,.w3-hover-border-pale-blue:hover{
     border-color:#e7ffff!important
+}
+.fixed-height {
+  height: 40px;
 }
