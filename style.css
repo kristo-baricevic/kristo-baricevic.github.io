@@ -527,56 +527,18 @@ a{
 .w3-col.s12{
     width:99.99999%
 }
- @media (min-width:601px){
-}
- @media (max-width: 767px) {
+
+ @media (max-width: 600px) {
    .project-grid {
      grid-template-columns: 1fr;
    }
     img:not(.fixed-height) {
         margin-left: 20px;
-        max-width: 50%;
+        max-width: 70%;
         height: auto;
     }
  }
- @media (min-width:993px){
-    .w3-col.l1{
-        width:8.33333%
-    }
-    .w3-col.l2{
-        width:16.66666%
-    }
-    .w3-col.l3{
-        width:24.99999%
-    }
-    .w3-col.l4{
-        width:33.33333%
-    }
-     .w3-col.l5{
-        width:41.66666%
-    }
-    .w3-col.l6{
-        width:49.99999%
-    }
-    .w3-col.l7{
-        width:58.33333%
-    }
-    .w3-col.l8{
-        width:66.66666%
-    }
-     .w3-col.l9{
-        width:74.99999%
-    }
-    .w3-col.l10{
-        width:83.33333%
-    }
-    .w3-col.l11{
-        width:91.66666%
-    }
-    .w3-col.l12{
-        width:99.99999%
-    }
-}
+
  .w3-rest{
     overflow:hidden
 }
@@ -624,31 +586,7 @@ a{
         max-width:95%
     }
 }
- @media (max-width:600px){
-    .w3-modal-content{
-        margin:0 10px;
-        width:auto!important
-    }
-    .w3-modal{
-        padding-top:30px
-    }
-     .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{
-        position:relative
-    }
-     .w3-hide-small{
-        display:none!important
-    }
-    .w3-mobile{
-        display:block;
-        width:100%!important
-    }
-    .w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{
-        text-align:center
-    }
-     .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{
-        width:100%
-    }
-}
+
  @media (max-width:768px){
     .w3-modal-content{
         width:500px
@@ -668,11 +606,7 @@ a{
         display:block!important
     }
 }
- @media (max-width:992px) and (min-width:601px){
-    .w3-hide-medium{
-        display:none!important
-    }
-}
+
  @media (max-width:992px){
     .w3-sidebar.w3-collapse{
         display:none
