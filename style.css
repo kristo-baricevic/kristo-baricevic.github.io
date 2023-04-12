@@ -530,6 +530,9 @@ a{
  @media (min-width:601px){
 }
  @media (max-width: 600px) {
+    body {
+    padding: 20px;
+    }
    .project-grid {
      grid-template-columns: 1fr;
    }
