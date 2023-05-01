@@ -280,7 +280,7 @@ a{
  .w3-btn,.w3-button{
     border:none;
     display:inline-block;
-    padding:8px 16px;
+    padding:8px 0px;
     vertical-align:middle;
     overflow:hidden;
     text-decoration:none;
@@ -412,7 +412,7 @@ a{
  .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{
     width:100%;
     text-align:left;
-    padding:8px 16px
+    padding:8px 0px
 }
  .w3-main,#main{
     transition:margin-left .4s
@@ -447,7 +447,7 @@ a{
     width:auto
 }
  .w3-bar .w3-bar-item{
-    padding:8px 16px;
+    padding:8px 0px;
     float:left;
     width:auto;
     border:none;
@@ -464,7 +464,7 @@ a{
  .w3-bar-block .w3-bar-item{
     width:100%;
     display:block;
-    padding:8px 16px;
+    padding:8px 0px;
     text-align:left;
     border:none;
     white-space:normal;
@@ -527,7 +527,8 @@ a{
 .w3-col.s12{
     width:99.99999%
 }
-
+ @media (min-width:601px){
+}
  @media (max-width: 600px) {
     body {
     padding: 20px;
