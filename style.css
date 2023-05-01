@@ -11,11 +11,14 @@
     -webkit-text-size-adjust:100%
 }
 body{
-    margin:0
+    margin:0;
 }
 #main {margin-left: 120px}
  article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{
     display:block
+}
+.main-padding{
+    padding: 20px;
 }
 .container {
   margin: 0 auto;
@@ -240,6 +243,14 @@ img{
 }
 a{
     color:inherit
+}
+.w3-top {
+    padding: 0px;
+}
+
+.w3-top .w3-bar {
+    margin: 0px;
+    padding: 0px;
 }
  .w3-table,.w3-table-all{
     border-collapse:collapse;
@@ -530,9 +541,6 @@ a{
  @media (min-width:601px){
 }
  @media (max-width: 600px) {
-    body {
-    padding: 20px;
-    }
    .project-grid {
      grid-template-columns: 1fr;
    }
@@ -693,9 +701,7 @@ a{
     width:100%;
     z-index:1
 }
-.w3-top{
-    top:0
-}
+
 .w3-bottom{
     bottom:0
 }
